@@ -1,0 +1,156 @@
+<html>
+    <title>Feedback</title>
+    <link rel="icon" href="Favicon 2.png" type="png" sizes="16x16">
+    <style>
+    * {
+        font-family:  Century Gothic;
+        font-weight: 300;
+    }
+    body, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: rgb(235, 233, 233);
+    }
+    li, h1, h2, h3, h4 {
+        color: darkslategrey;
+    }
+    .logo {
+        margin: 0;
+        background: url(Logo.png);
+        background-size: 70 px 70 px;
+        float: left;
+        width: 70px;
+        height: 70px;
+    }
+    .wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2%;
+    }
+    header {
+        background-color: #FFC0CB;
+        padding: 10px 0;
+    }
+    header nav {
+        float: right;
+        padding: 0 20px;
+    }
+    header:after {
+        content:"";
+        clear: both;
+        display: block;
+    }
+    header nav li {
+        list-style-type: none;
+        float: left;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    header nav li a {
+        text-decoration: none;
+        color: darkslategrey;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    a:link {
+        color:darkslategrey;
+    }
+    a:hover {
+        color:grey;
+    }
+    a:active {
+        color:black;
+        font-style: bold;
+        font-style: italic;
+    }
+    form {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    #button {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    form {
+        margin-left: 28px;
+    }
+    th, td {
+            border: 1px solid black;
+            margin-left: 10;
+            align-items: center;
+            font-size: 17px;
+    }
+    h2 {
+        margin-left: 30px;
+        font-size: 40px;
+        font-weight: 200;
+        margin-bottom: 15px;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-left: 30px;
+        font-weight: 700;
+        color: darkslategrey;
+        text-transform: uppercase;
+    }
+    </style>
+    <header>
+        <div class="wrapper">
+            <div class="logo"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Covid Vaccines.html" target="Main.html"><b>Home</b></a></li>
+                <li><a href="Covxin.html" target="Main.html"><b>Covaxin</b></a></li>
+                <li><a href="Covishield.html" target="Main.html"><b>Covishield</b></a></li>
+                <li><a href="Sputnik.html" target="Main.html"><b>Sputnik V</b></a></li>
+                <li><a href="To buy.html" target="Main.html"><b>Where to go</b></a></li>
+                <li><a href="Form.html" target="Main.html"><b>Feedback</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Feedback Form</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type=text placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type=text placeholder="name@gmail.com"></td>
+            </tr>
+            <tr>
+                <td>What vaccine would you prefer?</td>
+                <td><input type="checkbox"><label for="vaccine">Covaxin</label><br>
+                <input type="checkbox"><label for="vaccine">Convishield</label><br>
+                <input type="checkbox"><label for="vaccine">Sputnik V</label><br></td>
+            </tr>
+            <tr>
+                <td>What part of Delhi would you get vaccinated?</td>
+                <td><select id="place" name="places">
+                    <option>North-East Delhi</option>
+                    <option>North-West Delhi</option>
+                    <option>South-East Delhi</option>
+                    <option>South-West Delhi</option>
+                    <option>East Delhi</option>
+                    <option>West Delhi</option>
+                    <option>Central Delhi</option></select></td>
+            </tr>
+            <tr>
+                <td>Did you like this webpage?</td>
+                <td><input type=radio name="response">Yes<br>
+                    <input type=radio name="response">No<br>
+                    <input type=radio name="response">Yes, but it didn't help me<br>
+                    <input type=radio name="response">No, but it helped me</td>
+            </tr>
+            <tr>
+                <td colspan="2">Comments? Leave them here!<br>
+                <textarea cols="98" rows="8"></textarea></td>
+            </tr>
+        </table>
+        <input type="button" value="Submit Feedback" id="button">
+    </form>
+</html>
